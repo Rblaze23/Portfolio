@@ -1,0 +1,140 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  display: flex
+  width: 100%
+  height: 70px
+  align-items: center
+  justify-content: space-between
+  z-index: 10
+
+  &--logo
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: $white
+
+    p
+      margin: 0 0 0 10px
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+
+  &--nav-toggle
+    display: flex
+    width: 50px
+    height: 50px
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    span,
+    &::before,
+    &::after
+      content: ""
+      position: relative
+      width: 16px
+      height: 2px
+      background-color: $white
+
+    &::before
+      bottom: 5px
+      width: 23px
+
+    &::after
+      top: 5px
+      width: 23px
+   .skills-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .skill-item {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .skills-icons img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .skills-icons img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+
+      .tooltip {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(
+          15,
+          51,
+          255,
+          0.7
+        ); /* Use rgba to control opacity */
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 5px;
+        width: 80px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .skill-item:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      h2 {
+        color: #b7e0ff;
+      }
+      h1 {
+        color: #b7e0ff;
+      }
+      /* General paragraph styling */
+      .p {
+        color: #fff; /* White text color */
+        font-size: 14px; /* Slightly larger font size for better readability */
+        line-height: 1.6; /* Line height for readability */
+        margin-top: 10px; /* Adds spacing between paragraphs */
+        font-family: "Roboto", sans-serif; /* Modern sans-serif font */
+        text-align: center; /* Center-align text */
+      }
+  &--cta
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 0 20px
+    line-height: 30px
+    text-decoration: none
+    color: $white
+    font-weight: 700
+    text-transform: uppercase
+    background-color: $highlight
+    border: none
+    opacity: 0
+    visibility: hidden
+    transition: opacity .4s ease-in-out, visibility 0s .4s
+
+    &:focus
+      outline: none
+
+    &.is-active
+      opacity: 1
+      visibility: visible
+      transition: opacity .4s ease-in-out .4s
+
+    @media (max-width: 767px)
+      display: none

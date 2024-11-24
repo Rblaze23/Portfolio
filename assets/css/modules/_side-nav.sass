@@ -1,0 +1,130 @@
+.side-nav
+  position: relative
+  display: flex
+  width: 100px
+  height: 70%
+  max-height: 750px
+  flex-direction: column
+  justify-content: space-around
+  margin: 0
+  padding: 0
+  list-style-position: inside
+  z-index: 10
+
+  & > li
+    position: relative
+    top: -5px
+    color: $white
+    font-size: 6px
+    cursor: pointer
+
+    span
+      position: relative
+      top: 3px
+      left: 10px
+      color: $white
+      font-size: 14px
+      font-weight: 300
+      opacity: 0
+      visibility: hidden
+
+    &::before
+      position: absolute
+      top: 3px
+      left: 10px
+      color: #555
+      font-size: 14px
+      font-weight: 300
+
+  li:nth-child(1)::before
+    content: "01"
+
+  li:nth-child(2)::before
+    content: "02"
+
+  li:nth-child(3)::before
+    content: "03"
+
+  li:nth-child(4)::before
+    content: "04"
+
+  li:nth-child(5)::before
+    content: "05"
+
+  li.is-active
+    color: $highlight
+    transition: color .4s ease-in-out
+
+    span
+      opacity: 1
+      visibility: visible
+      transition: opacity .4s ease-in-out
+
+    &::before
+      left: -33px
+      color: $white
+   .skills-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .skill-item {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .skills-icons img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .skills-icons img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+
+      .tooltip {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(
+          15,
+          51,
+          255,
+          0.7
+        ); /* Use rgba to control opacity */
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 5px;
+        width: 80px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .skill-item:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      h2 {
+        color: #b7e0ff;
+      }
+      h1 {
+        color: #b7e0ff;
+      }
+      /* General paragraph styling */
+      .p {
+        color: #fff; /* White text color */
+        font-size: 14px; /* Slightly larger font size for better readability */
+        line-height: 1.6; /* Line height for readability */
+        margin-top: 10px; /* Adds spacing between paragraphs */
+        font-family: "Roboto", sans-serif; /* Modern sans-serif font */
+        text-align: center; /* Center-align text */
+      }
