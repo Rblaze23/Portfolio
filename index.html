@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ramy Lazghab</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/default.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="HTML5 website template" />
+    <meta name="keywords" content="global, template, html, sass, jquery" />
+    <meta name="author" content="Bucky Maler" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="#0">
+        <img src="assets/img/default.ico" alt="Global" />
+        <p>Ramy Lazghab</p>
+      </a>
+      <p class="device-notification--message">
+        Ramy Lazghab has so much to offer that we must request you orient your
+        device to portrait or find a larger screen. You won't be disappointed.
+      </p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header">
+              <a class="header--logo" href="#0">
+                <img src="assets/img/default.ico" alt="Ramy" />
+              </a>
+              <button class="header--cta cta">Contact Me</button>
+              <div class="header--nav-toggle">
+                <span></span>
+              </div>
+            </header>
+            <nav class="l-side-nav">
+              <ul class="side-nav">
+                <li class="is-active"><span>Home</span></li>
+                <li><span>Works</span></li>
+                <li><span>About</span></li>
+                <li><span>Skills</span></li>
+                <li><span>Contact</span></li>
+              </ul>
+            </nav>
+            <!-- Home Section -->
+            <ul class="l-main-content main-content">
+              <li class="l-section section section--is-active">
+                <div class="intro">
+                  <div class="intro--banner">
+                    <h1 class="hero-heading">
+                      <span class="highlight">Welcome!</span><br />
+                      <span
+                        >I’m <br /><span class="name">Ramy Lazghab</span></span
+                      >
+                    </h1>
+
+                    <button class="cta" onclick="scrollToContact()">
+                      Contact Me
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="btn-background"></span>
+                    </button>
+                    <img
+                      src="assets/img2/me.png"
+                      alt="Welcome"
+                      width="500"
+                      height="100%"
+                      style="opacity: 0.7"
+                    />
+                  </div>
+                  <div class="intro--options">
+                    <a href="#0">
+                      <h3>Big Data Projects</h3>
+                      <p>
+                        Explore insights from analyzing and processing large
+                        datasets.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>AI & Machine Learning</h3>
+                      <p>
+                        Discover AI models and innovative solutions to
+                        real-world problems.
+                      </p>
+                    </a>
+                    <a href="#0">
+                      <h3>Web Development</h3>
+                      <p>
+                        View responsive and user-friendly web applications I've
+                        built.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <!-- Works Section -->
+              <li class="l-section section" id="work">
+                <div class="work">
+                  <h2>Selected work</h2>
+                  <div class="work--lockup">
+                    <ul class="slider">
+                      <li class="slider--item slider--item-left">
+                        <a href="#0">
+                          <div class="slider--item-image">
+                            <img src="assets/img/invest.jpg" alt="Victory" />
+                          </div>
+                          <p class="slider--item-title">
+                            Startup Investment Program
+                          </p>
+                          <p class="slider--item-description">
+                            A program leveraging NLP and Word2Vec embeddings to
+                            assist investors in identifying high-potential
+                            startups.
+                          </p>
+                        </a>
+                      </li>
+                      <li class="slider--item slider--item-center">
+                        <a href="#0">
+                          <div class="slider--item-image">
+                            <img
+                              src="assets/img/blended.png"
+                              alt="Metiew and Smith"
+                            />
+                          </div>
+                          <p class="slider--item-title">
+                            Blended Learning Platform
+                          </p>
+                          <p class="slider--item-description">
+                            Developed a Blended-learning application
+                            facilitating online/offline training courses
+                          </p>
+                        </a>
+                      </li>
+                      <li class="slider--item slider--item-right">
+                        <a href="#0">
+                          <div class="slider--item-image">
+                            <img src="assets\img\default.png" alt="analyse" />
+                          </div>
+                          <p class="slider--item-title">
+                            Analysis of Position and Career<br />
+                            Satisfaction Correlation
+                          </p>
+                          <p class="slider--item-description">
+                            Conducted Principal Component Analysis (PCA) on
+                            socio-economic datasets to explore factors affecting
+                            employment trends
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="slider--prev">
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="slider--next">
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="l-section section">
+                <div class="about">
+                  <div class="about--banner">
+                    <h2>About Me</h2>
+                    <div class="about--content">
+                      <div>
+                        <p>
+                          Hello, I'm Ramy Lazghab, a Data Science and AI
+                          student<br />
+                          at Dauphine Paris University, exploring Big Data and
+                          AI. <br /><br />
+
+                          I hold a Bachelor's in Computer Engineering, with
+                          software<br />
+                          development and IoT experience. I’ve built and
+                          maintained<br />
+                          complex software systems. These experiences shaped my
+                          current<br />
+                          focus on data science. <br /><br />
+
+                          Now, I specialize in using data to build
+                          intelligent<br />
+                          systems, extract insights, and apply machine learning
+                          models.<br />
+                          My skills include statistical analysis and data
+                          visualization.<br /><br />
+
+                          I’m seeking opportunities to grow and contribute
+                          through<br />
+                          internships or full-time roles in data science and
+                          AI.<br />
+                          I’m excited to apply my skills to innovative projects.
+                          <br /><br />
+
+                          Thank you for visiting my portfolio!
+                        </p>
+                      </div>
+
+                      <img
+                        src="./assets/img/aboutme.png"
+                        alt="About Me"
+                        style="max-width: 100%; height: auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!--skills style-->
+              <li class="l-section section">
+                <div class="hire">
+                  <h2>My Skills</h2>
+
+                  <!-- Programming Languages -->
+                  <h3>Programming Languages</h3>
+                  <div class="skills-icons">
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        height="70"
+                        alt="Python logo"
+                      />
+                      <span class="tooltip">Python</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        height="70"
+                        alt="Java logo"
+                      />
+                      <span class="tooltip">Java</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                        height="70"
+                        alt="C logo"
+                      />
+                      <span class="tooltip">C</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
+                        height="70"
+                        alt="R logo"
+                      />
+                      <span class="tooltip">R</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        height="70"
+                        alt="MySQL logo"
+                      />
+                      <span class="tooltip">MySQL</span>
+                    </div>
+                  </div>
+
+                  <!-- Frameworks & Libraries -->
+                  <h3>Frameworks & Libraries</h3>
+                  <div class="skills-icons">
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        height="70"
+                        alt="React logo"
+                      />
+                      <span class="tooltip">React</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://img.icons8.com/?size=100&id=qV-JzWYl9dzP&format=png&color=000000"
+                        height="70"
+                        alt="Django REST Framework logo"
+                      />
+                      <span class="tooltip">Django REST Framework</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                        height="70"
+                        alt="TensorFlow logo"
+                      />
+                      <span class="tooltip">TensorFlow</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                        height="70"
+                        alt="Pandas logo"
+                      />
+                      <span class="tooltip">Pandas</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                        height="70"
+                        alt="NumPy logo"
+                      />
+                      <span class="tooltip">NumPy</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        height="70"
+                        alt="VS Code logo"
+                      />
+                      <span class="tooltip">VS Code</span>
+                    </div>
+                  </div>
+
+                  <!-- Data Science & Tools -->
+                  <h3>Data Science & Tools</h3>
+                  <div class="skills-icons">
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                        height="70"
+                        alt="Jupyter logo"
+                      />
+                      <span class="tooltip">Jupyter</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        height="70"
+                        alt="Git logo"
+                      />
+                      <span class="tooltip">Git</span>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        height="70"
+                        alt="Docker logo"
+                      />
+                      <span class="tooltip">Docker</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Contact Section -->
+              <li class="l-section section" id="contact">
+                <div class="contact">
+                  <div class="contact--lockup">
+                    <div class="modal">
+                      <div class="modal--information">
+                        <a href="mailto:ouremail@gmail.com"
+                          >ramy.lazghab@dauphine.tn</a
+                        >
+                        <a href="tel:+148126287560">+21651483316</a>
+                      </div>
+                      <ul class="modal--options">
+                        <!-- GitHub Icon -->
+                        <li>
+                          <a
+                            href="https://github.com/Rblaze23"
+                            target="_blank"
+                            class="social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="28"
+                              height="28"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4.01 0c1.52-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <!-- X Icon -->
+                        <li>
+                          <a
+                            href="https://x.com/Blazehere23"
+                            target="_blank"
+                            class="social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="28"
+                              height="28"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                d="M396.3 32H50.67A50.75 50.75 0 0 0 0 82.67v346.66A50.75 50.75 0 0 0 50.67 480h345.63A50.75 50.75 0 0 0 448 429.33V82.67A50.75 50.75 0 0 0 396.3 32zM317.5 356.4L221.9 262.5 126.3 356.4H65.67l132.4-138.2L65.67 80h60.63l95.6 91.94L317.5 80h60.63l-132.4 138.2 132.4 138.2z"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+
+                        <!-- LinkedIn Icon -->
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/ramy-lazghab-1464a8201/"
+                            target="_blank"
+                            class="social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="28"
+                              height="28"
+                              viewBox="0 0 448 512"
+                            >
+                              <path
+                                d="M100.28 448H7.4V149.6h92.88zm-46.44-337C24.19 111 0 86.53 0 57.74 0 27.36 23.26 0 52.47 0c29.71 0 52.44 26.84 52.44 57.25-.03 28.8-22.72 53.74-51.07 53.74zm394.41 337h-92.69V302.4c0-34.73-13.32-58.47-42.79-58.47-23.32 0-37.03 15.7-43.11 30.86-2.22 5.37-2.77 12.87-2.77 20.42V448h-92.9s1.22-238.85 0-263.4h92.9v37.34c12.33-19 34.44-46.13 83.7-46.13 61.17 0 106.98 39.92 106.98 125.72V448z"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="assets/Resume.pdf"
+                            download="Ramy_Lazghab_Resume"
+                            class="social-link"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="28"
+                              height="28"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M12 3v12.2l4.2-4.2 1.4 1.4-6 6-6-6 1.4-1.4L12 15.2V3h4V0h-8v3h4z"
+                              />
+                            </svg>
+                            <p style="color: black">Resume</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="outer-nav">
+        <li class="is-active">Home</li>
+        <li>Works</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <style>
+      .skills-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .skill-item {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .skills-icons img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .skills-icons img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+
+      .tooltip {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(
+          85,
+          187,
+          145,
+          0.7
+        ); /* Use rgba to control opacity */
+        color: #fff;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 5px;
+        width: 80px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .skill-item:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      h2 {
+        color: #55bb91;
+      }
+      h1 {
+        color: #fff;
+      }
+      /* General paragraph styling */
+      .p {
+        color: #fff; /* White text color */
+        font-size: 14px; /* Slightly larger font size for better readability */
+        line-height: 1.6; /* Line height for readability */
+        margin-top: 10px; /* Adds spacing between paragraphs */
+        font-family: "Roboto", sans-serif; /* Modern sans-serif font */
+        text-align: center; /* Center-align text */
+      }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
+        );
+    </script>
+    <script src="assets/js/functions-min.js"></script>
+  </body>
+</html>
