@@ -618,5 +618,17 @@
         );
     </script>
     <script src="assets/js/functions-min.js"></script>
+    <script>
+      document.querySelector('.header--logo').addEventListener('click', function (e) {
+        e.preventDefault(); // prevent default anchor behavior
+        const target = document.getElementById('main');
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    </script>
+
   </body>
 </html>
