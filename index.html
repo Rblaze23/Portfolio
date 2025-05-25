@@ -619,16 +619,24 @@
     </script>
     <script src="assets/js/functions-min.js"></script>
     <script>
-      document.querySelector('.header--logo').addEventListener('click', function (e) {
-        e.preventDefault(); // prevent default anchor behavior
-        const target = document.getElementById('main');
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
+      document.querySelector('.header--logo').addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Deactivate current section
+        document.querySelectorAll('.l-section').forEach(section => {
+          section.classList.remove('section--is-active');
+        });
+
+        // Activate the #main section
+        const targetSection = document.querySelector('#main').closest('.l-section');
+        if (targetSection) {
+          targetSection.classList.add('section--is-active');
         }
+
+     
       });
     </script>
+
 
   </body>
 </html>
