@@ -42,7 +42,7 @@ $(document).ready(function () {
   $(document).keyup(function (e) {
     if (!$(".outer-nav").hasClass("is-vis")) {
       const keyCode = e.which;
-      if (keyCode === 40 || keyCode === 38) {
+      if ([38, 40].includes(keyCode)) {
         scrollHandler(keyCode === 40 ? 1 : -1);
       }
     }
@@ -51,6 +51,7 @@ $(document).ready(function () {
   function scrollHandler(direction) {
     if (canScroll) {
       canScroll = false;
+      clearTimeout(scrollController);
       const curPos = $(".side-nav .is-active").index();
       const lastItem = $(".side-nav li").length - 1; // Dynamically calculates the last item
       const nextPos =
@@ -105,25 +106,27 @@ $(document).ready(function () {
   }
 
   function workSlider() {
-    $(".slider--prev, .slider--next").click(function () {
-      const isNext = $(this).hasClass("slider--next");
-      const items = $(".slider > .slider--item");
-      const totalItems = items.length;
-      const positions = ["left", "center", "right"];
-      const indices = positions.map((pos) =>
-        items.index($(`.slider--item-${pos}`))
-      );
+    $(".slider--prev, .slider--next")
+      .off("click")
+      .on("click", function () {
+        const isNext = $(this).hasClass("slider--next");
+        const items = $(".slider > .slider--item");
+        const totalItems = items.length;
+        const positions = ["left", "center", "right"];
+        const indices = positions.map((pos) =>
+          items.index($(`.slider--item-${pos}`))
+        );
 
-      $(".slider").animate({ opacity: 0 }, 400, function () {
-        indices.forEach((index, i) => {
-          items.eq(index).removeClass(`slider--item-${positions[i]}`);
-          const newIndex =
-            (index + (isNext ? 1 : -1) + totalItems) % totalItems;
-          items.eq(newIndex).addClass(`slider--item-${positions[i]}`);
+        $(".slider").animate({ opacity: 0 }, 400, function () {
+          indices.forEach((index, i) => {
+            items.eq(index).removeClass(`slider--item-${positions[i]}`);
+            const newIndex =
+              (index + (isNext ? 1 : -1) + totalItems) % totalItems;
+            items.eq(newIndex).addClass(`slider--item-${positions[i]}`);
+          });
+          $(".slider").animate({ opacity: 1 }, 400);
         });
-        $(".slider").animate({ opacity: 1 }, 400);
       });
-    });
   }
 
   function transitionLabels() {
